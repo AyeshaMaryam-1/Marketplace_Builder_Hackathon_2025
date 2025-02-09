@@ -1,0 +1,11 @@
+Test Case ID,Test Case Description,Test Steps,Expected Result,Actual Result,Status,Severity Level,Assigned To,Remarks
+TC001,Validate Home Page,"Open the homepage > Verify UI elements (banner, navigation, featured products)",All elements load correctly,As expected,Passed,Low,-,No issues found
+TC002,Verify Product Listing Page,"Open Shop page > Check product display, filtering, and sorting",Products display properly and filters work correctly,As expected,Passed,Medium,-,Works fine
+TC003,Test Dynamic Product Routing,Click on a product > Verify details page loads correctly,Product details page loads with correct info,As expected,Passed,High,-,No issues found
+TC004,Validate Add to Cart Functionality,Add a product to the cart > Verify cart contents,Cart updates with selected product,As expected,Passed,High,-,Works as expected
+TC005,Test Checkout Form Submission,Fill in details > Submit the checkout form,Checkout completes successfully,As expected,Passed,High,-,Handled gracefully
+TC006,API Error Handling,Disconnect API > Refresh any page fetching data,Show fallback UI with error message,Error message displayed,Passed,Medium,-,Handled gracefully
+TC007,Ensure Responsiveness,Resize browser > Test on mobile/tablet,Layout adjusts to all screen sizes,Responsive layout works fine,Passed,Medium,-,Works on all tested devices
+TC008,Test Blog Page,Open Blog page > Read articles > Check images & navigation,Blog posts load correctly with images,As expected,Passed,Low,-,No UI issues
+TC009,Validate SEO Best Practices,Run Lighthouse audit > Check SEO score,Good SEO practices implemented,Needs improvement,Failed,Medium,-,Optimize meta tags & headings
+TC010,Performance Testing,Run Lighthouse audit > Check performance metrics,Page load under 2 seconds,Slight delay detected,Needs Improvement,High,-,Optimize assets & caching
