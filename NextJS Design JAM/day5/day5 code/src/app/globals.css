@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+.logo{
+  height: auto;
+  width: auto;
+}
+
+.mobile-menu {
+  display: none; /* Initially hidden */
+}
+.menu-toggle {
+  display: none;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+
+  .mobile-menu.show {
+    display: flex; /* Show menu when toggled */
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    align-items: flex-start;
+    padding: 1rem; /* Optional padding */
+    top: 64px; /* Adjust depending on header height */
+    right: 0;
+    width: 30%;
+    z-index: 10; /* Ensure the menu is in front */
+  }
+
+  .logo-container {
+    flex: 1; /* Allow the logo and site name to occupy more space */
+  }
+
+  .site-name {
+    font-size: 1.2rem; /* Adjust site name size for smaller screens */
+  }
+  .banner-container, .banner, .cart{
+    max-width: 100%; /* Full width for small screens */
+  }
+}
+
+@media only screen and (min-width: 240px) and (max-width: 340px) {
+  .main{
+    width: 173px;
+    height: 143px;
+    margin-top: 8px;
+    padding: 4px;
+  }
+  .banner {
+    object-fit: cover; /* Ensure the image maintains its aspect ratio */
+}
+
+  .arrival{
+    font-size: xx-small;
+  }
+  .collection{
+    font-size: smaller;
+  }
+  .text{
+    font-size: x-small;
+  }
+  .buy-button{
+    font-size: x-small;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .banner{
+    max-width: 100%;
+  }
+
+  .mobile-menu.show {
+    display: flex; /* Show menu when toggled */
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    align-items: flex-start;
+    padding: 1rem; /* Optional padding */
+    top: 64px; /* Adjust depending on header height */
+    right: 0;
+    width: 70%;
+    z-index: 10; /* Ensure the menu is in front */
+  }
+}
+@media only screen and (min-width: 341px) and (max-width: 639px) {
+  .main{
+    width: 220px;
+    height: 140px;
+    margin-top: 18px;
+    padding: 4px;
+  }
+  .arrival{
+    font-size: x-small;
+  }
+  .collection{
+    font-size: small;
+  }
+  .text{
+    font-size: x-small;
+  }
+  .buy-button{
+    font-size: x-small;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .menu-toggle{
+    display: block;
+  }
+}
